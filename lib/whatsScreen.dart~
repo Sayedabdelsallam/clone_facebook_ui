@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'dart:ui';
+
+class Whatsscreen extends StatelessWidget {
+  const Whatsscreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("whatsapp"),
+        backgroundColor: Colors.green,
+      ),
+      body: Column(
+        children: [
+          Container(
+            color: Colors.red,
+            width: 200,
+            height: 500,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/back.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            // child: Image(
+            //   image: AssetImage(
+            //     "assets/images/back.png",
+            //   ),
+            // ),
+          ),
+          // SvgPicture.asset(
+          //   "assets/images/backGround.svg",
+          //   semanticsLabel: 'Acme Logo',
+          //   height: 100,
+          //   width: 50,
+          //   fit: BoxFit.cover,
+          // ),
+        ],
+      ),
+    );
+  }
+}
